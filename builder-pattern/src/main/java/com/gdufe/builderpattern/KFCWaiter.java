@@ -7,7 +7,6 @@ import lombok.Setter;
  * @Description: 指挥者
  * @Date: 2018/7/29 17:33
  */
-@Setter
 public class KFCWaiter {
     private MealBuilder mealBuilder;
 
@@ -19,5 +18,9 @@ public class KFCWaiter {
         mealBuilder.buildFood();
         mealBuilder.buildDrink();
         return mealBuilder.getMeal();
+    }
+
+    public void setMealBuilder(MealBuilder mealBuilder) {
+        this.mealBuilder = mealBuilder;
     }
 }
